@@ -1,0 +1,350 @@
+/* 2372031 Jethro-A B */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+/* Font Extenal */
+@font-face {
+    font-family: Avenir;
+    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProBlack.otf);
+}
+
+@font-face {
+    font-family: Avenir-Medium;
+    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProMedium.otf);
+}
+
+@font-face {
+    font-family: Avenir-Heavy;
+    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProMedium.otf);
+}
+
+/* End Font External Code */
+
+
+
+/* NavBar Line */
+header {
+    position: sticky;
+    top: 0;
+}
+
+img.logo-navbar {
+    height: 51px;
+    padding-left: 40px;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, .5);
+    font-size: 15px;
+}
+
+ul.ul-navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+a.a-nav {
+    text-decoration: none;
+    font-family: Avenir;
+    color: rgb(32, 50, 77);
+    padding: 0px 20px;
+}
+
+
+.menu-icon {
+    font-size: 30px;
+    display: none;
+}
+
+
+
+ul.dropdown li {
+    display: block;
+    background-color: bisque;
+    margin: 2px;
+}
+
+ul.dropdown {
+    width: auto;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+    z-index: 9999;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul.dropdown-content a {
+    text-decoration: none;
+    font-family: Avenir;
+    color: rgb(32, 50, 77);;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    ul.ul-navbar {
+        display: block;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    li.li-navbar {
+        padding-bottom: 20px;
+    }
+
+    ul.hidden {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+}
+/* End Navbar */
+
+
+/* Section Head */
+div.title {
+    font-family: Avenir;
+    font-weight: bold;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+div.title>h2 {
+    color: rgb(249,108,0);
+}
+
+div.title>h1 {
+    font-size: 80px;
+}
+
+div.title {
+    padding-bottom: 250px;
+    padding-top: 17%;
+    padding-right: 50px;
+    text-align: right;
+}
+
+div.jumboTron {
+    background-image: url(/images/Background-image/HAN5417-1-scaled-2560x1707.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* End Section Head */
+
+
+/*  */
+section.background-image {
+    background-image: url(/images/Background-image/Background-section-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Section Body */
+div.bricklink-container {
+    display: grid;
+    margin-left: 90px;
+    margin-right: 90px;
+    grid-template-areas: "judul judul"
+                         "jarak jarak"
+                         "logo deskripsi";
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0fr 0fr 1fr;
+}
+
+
+/* Div Bracklink */
+div.head-bricklink {
+    font-family: Avenir;
+    text-align: center;
+    grid-area: judul;
+}
+
+
+h3.h3-bricklink {
+    font-size: 20px;
+    color: #f96c00;
+    padding-bottom: 10px;
+}
+
+h1.h1-bricklink {
+    font-size: 48px;
+    padding-bottom: 10px;
+}
+
+div.line-bricklink {
+    height: 10px;
+    width: 6%;
+    background-color: #f96c00;
+    margin: auto;
+}
+
+div.space-jarak {
+    height: 100px;
+    grid-area: jarak;
+}
+/* End Div Bracklink */
+
+
+/* Gambar */
+div.bricklink-logo {
+    grid-area: logo;
+    margin: auto;
+}
+
+img.logo-bricklink {
+    border-radius: 24px 24px 24px 24px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+    height: 240px;
+}
+/* End gambar */
+
+
+/* Deskripsi */
+div.deskripi-bricklink {
+    grid-area: deskripsi;
+    font-family: Avenir;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 20px;
+}
+
+p.p-deskripsi {
+    font-size: 18px;
+}
+/* End Deskrispsi */
+
+
+
+div.space {
+    height: 50px;
+}
+
+/* Footer Line*/
+footer {
+    padding: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: grid;
+    grid-template-areas: "logo footer-nav"
+        "alamat kosong"
+        "contact jumbofont"
+        "line line";
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    background-color: black;
+}
+
+div.footer-logo {
+    grid-area: logo;
+}
+
+img.footer-logo {
+    height: 90px;
+}
+
+div.footer-nav {
+    grid-area: footer-nav;
+}
+
+ul.footer-ul {
+    text-align: right;
+}
+
+li.footer-li {
+    display: inline;
+    list-style: none;
+    font-family: Avenir;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 19px;
+}
+
+a.footer-a {
+    text-decoration: none;
+    color: white;
+}
+
+a.footer-a:hover {
+    color: rgb(0, 29, 255);
+}
+
+div.alamat {
+    grid-area: alamat;
+}
+
+p.p-alamat {
+    font-family: Avenir-medium;
+    font-size: 25px;
+    color: white;
+}
+
+div.footer-contact {
+    grid-area: contact;
+}
+
+p.p-contact {
+    font-family: Avenir;
+    color: white;
+}
+
+div.jumboFont {
+    grid-area: jumbofont;
+}
+
+h1.h1-jumboFont {
+    text-align: right;
+    font-family: Avenir;
+    letter-spacing: 5px;
+    font-size: 37px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+div.line {
+    grid-area: line;
+    color: white;
+}
+/* End Footer */

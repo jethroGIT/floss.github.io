@@ -1,0 +1,349 @@
+/* 2372031 Jethro-A B */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+/* Font Extenal */
+@font-face {
+    font-family: Avenir;
+    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProBlack.otf);
+}
+
+@font-face {
+    font-family: Avenir-Medium;
+    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProMedium.otf);
+}
+
+/* End Font External Code */
+
+
+
+/* NavBar Line */
+header {
+    position: sticky;
+    top: 0;
+}
+
+img.logo-navbar {
+    height: 51px;
+    padding-left: 40px;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, .5);
+    font-size: 15px;
+}
+
+ul.ul-navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+
+a.a-nav {
+    text-decoration: none;
+    font-family: Avenir;
+    color: rgb(32, 50, 77);
+    padding: 0px 20px;
+}
+
+
+.menu-icon {
+    font-size: 30px;
+    display: none;
+}
+
+
+ul.dropdown li {
+    display: block;
+    background-color: bisque;
+    margin: 2px;
+}
+
+ul.dropdown {
+    width: auto;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+    z-index: 9999;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul.dropdown-content a {
+    text-decoration: none;
+    font-family: Avenir;
+    color: rgb(32, 50, 77);;
+}
+
+
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+
+    ul.ul-navbar {
+        display: block;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    li.li-navbar {
+        padding-bottom: 20px;
+    }
+
+    ul.hidden {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+        align-items: center;
+    }
+}
+/* End Navbar */
+
+
+/* Main Line */
+main {
+    margin: 50px;
+    display: grid;
+    grid-template-areas: "kontak kosong"
+        "pertanyaan kosong"
+        "empty alamat"
+        "form logo";
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 0.5fr 0.3fr 1fr 3fr;
+}
+
+
+/* Jumbo Font */
+div.jumboFont-kontak {
+    grid-area: kontak;
+}
+
+h3.h3-jumboFont-kontak {
+    font-size: 123px;
+    font-family: Avenir;
+    color: rgb(34,34,34);
+}
+
+/* End Jumbo Font */
+
+
+/* Pertanyaan */
+div.pertanyaan {
+    grid-area: pertanyaan;
+}
+
+p.p-pertanyaan {
+    font-size: 1.2rem;
+    font-family: Avenir;
+}
+
+/* End Pertanyaan*/
+
+
+
+/* Form */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form {
+    margin: 0px 35px 0px 160px;
+}
+
+input {
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+input.input-submit {
+    background-color: black;
+    color: white;
+}
+
+select {
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border-style: solid;
+    width: 100%;
+    border-color: black;
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+div.form {
+    grid-area: form;
+    padding: 5px;
+    font-family: Avenir-medium;
+}
+
+/* End Form */
+
+
+
+/* Bagian Kiri */
+div.alamat-kontak {
+    grid-area: alamat;
+    text-align: right;
+}
+
+h3.h3-alamat-kontak {
+    font-family: Avenir-medium;
+    font-size: 2rem;
+}
+
+p.p-alamat-kontak {
+    font-family: Avenir-medium;
+    font-size: 1.1rem;
+}
+
+
+div.logo-form {
+    grid-area: logo;
+    text-align: center;
+    padding-top: 130px;
+}
+
+img.form-logo {
+    width: 400px;
+}
+
+/* End Bagian Kiri  */
+/* End Main */
+
+
+/* Footer Line*/
+footer {
+    padding: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: grid;
+    grid-template-areas: "logo footer-nav"
+        "alamat kosong"
+        "contact jumbofont"
+        "line line";
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    background-color: black;
+}
+
+div.footer-logo {
+    grid-area: logo;
+}
+
+img.footer-logo {
+    height: 90px;
+}
+
+div.footer-nav {
+    grid-area: footer-nav;
+}
+
+ul.footer-ul {
+    text-align: right;
+}
+
+li.footer-li {
+    display: inline;
+    list-style: none;
+    font-family: Avenir;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 19px;
+}
+
+a.footer-a {
+    text-decoration: none;
+    color: white;
+}
+
+a.footer-a:hover {
+    color: rgb(0,29,255);
+}
+
+div.alamat {
+    grid-area: alamat;
+}
+
+p.p-alamat {
+    font-family: Avenir-medium;
+    font-size: 25px;
+    color: white;
+}
+
+div.footer-contact {
+    grid-area: contact;
+}
+
+p.p-contact {
+    font-family: Avenir;
+    color: white;
+}
+
+div.jumboFont {
+    grid-area: jumbofont;
+}
+
+h1.h1-jumboFont {
+    text-align: right;
+    font-family: Avenir;
+    letter-spacing: 5px;
+    font-size: 37px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+div.line {
+    grid-area: line;
+    color: white;
+}
+
+div.space {
+    height: 50px;
+}
+
