@@ -14,17 +14,17 @@ html {
 /* Font Extenal */
 @font-face {
     font-family: Avenir;
-    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProBlack.otf);
+    src: url(font/avenir-lt-pro-cufonfonts/AvenirLTProBlack.otf);
 }
 
 @font-face {
     font-family: Avenir-Medium;
-    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProMedium.otf);
+    src: url(font/avenir-lt-pro-cufonfonts/AvenirLTProMedium.otf);
 }
 
 @font-face {
     font-family: Avenir-Heavy;
-    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProMedium.otf);
+    src: url(font/avenir-lt-pro-cufonfonts/AvenirLTProMedium.otf);
 }
 
 /* End Font External Code */
@@ -166,7 +166,7 @@ div.title {
 }
 
 div.jumboTron {
-    background-image: url(/images/Background-image/HAN5417-1-scaled-2560x1707.jpg);
+    background-image: url(images/Background-image/HAN5417-1-scaled-2560x1707.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -175,7 +175,7 @@ div.jumboTron {
 
 /*  */
 section.background-image {
-    background-image: url(/images/Background-image/Background-section-2.jpg);
+    background-image: url(images/Background-image/Background-section-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
