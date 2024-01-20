@@ -14,7 +14,7 @@ html {
 /* Font Extenal */
 @font-face {
     font-family: Avenir;
-    src: url(./font/avenir-lt-pro-cufonfonts/AvenirLTProBlack.otf);
+    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProBlack.otf);
 }
 
 @font-face {
