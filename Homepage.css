@@ -14,12 +14,12 @@ html {
 /* Font Extenal */
 @font-face {
     font-family: Avenir;
-    src: url(../font/avenir-lt-pro-cufonfonts/AvenirLTProBlack.otf);
+    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProBlack.otf);
 }
 
 @font-face {
     font-family: Avenir-Medium;
-    src: url(../font/avenir-lt-pro-cufonfonts/AvenirLTProMedium.otf);
+    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProMedium.otf);
 }
 
 /* End Font External Code */
@@ -139,7 +139,7 @@ ul.dropdown-content a {
 
 /* Section Head Line */
 div.title {
-    font-family: Avenir;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 30px;
     color: whitesmoke;
