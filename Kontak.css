@@ -19,7 +19,7 @@ html {
 
 @font-face {
     font-family: Avenir-Medium;
-    src: url(./font/avenir-lt-pro-cufonfonts/AvenirLTProMedium.otf);
+    src: url(/font/avenir-lt-pro-cufonfonts/AvenirLTProMedium.otf);
 }
 
 /* End Font External Code */
