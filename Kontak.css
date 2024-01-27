@@ -300,6 +300,7 @@ li.footer-li {
 a.footer-a {
     text-decoration: none;
     color: white;
+    transition: all .3s;
 }
 
 a.footer-a:hover {
