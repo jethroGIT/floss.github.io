@@ -406,3 +406,44 @@ div.line {
 }
 
 /* End Footer */
+
+
+/* Chat WA */
+a.a-wa {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 30px;
+    background-color: #25d366;
+    border: 2px solid white;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, .5);
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    animation: animate 2s linear infinite;
+}
+
+i {
+    margin-top: 13px;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 #23ff74b7;
+    }
+
+    40% {
+        box-shadow: 0 0 0 15px rgba(255, 26, 67, 0);
+    }
+
+    80% {
+        box-shadow: 0 0 0 15px rgba(255, 206, 67, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(255, 206, 67, 0);
+    }
+}
+
